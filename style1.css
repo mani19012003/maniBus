@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+*{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.login-box {
+    width: 100%;
+    height: 100vh;
+    background: url(img/1971537.jpg);
+    
+    background-position: center;
+    background-size: cover;
+
+}
+.login{
+    font-family: 'Passion One', cursive;
+}
+.navbar-con{
+    height: 10vh;
+    width: 100%;
+}
+
+.login-box > div{
+    border-radius: 20px;
+    padding: 2%;
+    transition: 0.3s ease;
+    background-color: #fff;
+    border: 2px solid #212121;
+}
+
+.login-box > div:hover{
+    transition: 0.3s ease;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #2121217a;
+}
+
+.signup-btn{
+    color: #63468f;
+}
