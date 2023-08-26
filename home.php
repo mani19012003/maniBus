@@ -3,14 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bus List</title>
-    <link rel="stylesheet" href="buslist.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
 <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+
+
     <div style="width: 100%;height: 100vh;background-color: dodgerblue;">
-        <nav class="navbar bg-dark navbar-expand-lg main-text">
+        <nav class="navbar navbar-expand-lg main-text">
             <div class="container-fluid">
                 <a class="navbar-brand text-white" href="#">
                     <img src="img/Component 1.png" alt="Logo" width="120" height="40" class="d-inline-block align-text-top">
@@ -23,10 +28,10 @@
               <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link text-white"  href="#about">ABOUT</a>
+                    <a class="nav-link color-whi"  href="landing.html#about">ABOUT</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-white" href="#contact">CONTACT</a>
+                    <a class="nav-link color-whi" href="landing.html#contact">CONTACT</a>
                   </li>
                 </ul>
               
@@ -35,7 +40,7 @@
                     </a>
                   
                     <ul class="dropdown-menu mt-4">
-                      <li><a class="dropdown-item" href="">Profile</a></li>
+                     
                       <li><a class="dropdown-item" href="landing.html">logout</a></li>
                     </ul>
                   </div>
@@ -45,17 +50,35 @@
           </nav>
 
 
-          <section class="w-100 d-flex px-3 align-items-center justify-content-center" >
-           <section class=""></section>
-           <section class="">
+          <section class="w-100 d-flex px-3 align-items-center justify-content-center" style="height: 90vh;background-image: url(img/HomeBannerImg.svg);background-size: 100% 105vh;">
+            <form action="buslist.php" class="  w-fit p-4 form rounded-sm d-flex align-items-center justify-content-center" method="post" style="border-radius: 50px;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0 0 10px #2121218e;
+           ">
+              <div class="container">
+                  
+                  <input type="search" autofocus name="from" class="form-control border border-black" placeholder="From location" required />
+              </div>
+              <div class="container">
+                  
+                <input type="search" name="to" class="form-control border border-black" placeholder="To location" required />
+            </div>
+              <div class="container">
+                 
+                  <input type="date" name="date" class="form-control border border-black" placeholder="Enter your password" required>
+              </div>
+              <div class="container d-flex gap-4 align-items-center justify-content-center">
+                  
+                  <button  class="btn btn-primary"> search buses</button>
+              </div>
+            
+             
 
-           </section>
+
+          </form>
           </section>
         
     </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     
 </body>
 </html>

@@ -10,8 +10,10 @@
         $count = mysqli_num_rows($result);  
         
         
+
+
         if($count == 1){  
-            header("Location: home.html");
+            header("Location: home.php");
         }  
         elseif($email=="megalamani9616@gmail.com" && $password =="manimegala"){
             header("Location: admin.php");
@@ -50,14 +52,14 @@
                 <h2 class="text-center fs-1  login text-uppercase">Login</h2>
                
                  <!-- <?php echo $error; ?> -->
-                <form action="login.php" class="gap-3 d-flex flex-column align-items-center justify-content-center" method="post">
+                <form autocomplete="off" action="login.php" class="gap-3 d-flex flex-column align-items-center justify-content-center" method="post">
                     <div class="container">
                         
-                        <input type="email" name="email" class="form-control" placeholder="Enter username/email Id" required />
+                        <input type="email" autocomplete="off" name="email" class="form-control" placeholder="Enter email Id" required />
                     </div>
                     <div class="container">
                        
-                        <input type="password" name="password" class="form-control" placeholder="Enter your password" required>
+                        <input type="password" autocomplete="off" name="password" class="form-control" placeholder="Enter your password" required>
                     </div>
                     <div class="container d-flex gap-4 align-items-center justify-content-center">
                         <input type="submit" name="submit" class="btn btn-primary" value="SignIn" />
